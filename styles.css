@@ -38,3 +38,11 @@ body {
     box-shadow: 0px 0px 5px black;
     padding: 3px;
 }
+
+#directories-image {
+    height: 15vw;
+    width: 14vw;
+    border: 2px solid black;
+    padding: 2px;
+    margin-bottom: 15px;
+}
