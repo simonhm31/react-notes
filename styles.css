@@ -41,7 +41,9 @@ body {
 
 #directories-image {
     height: 15vw;
-    width: 14vw;
+    width: 15vw;
+    min-height: 100px;
+    min-width: 100px;
     border: 2px solid black;
     padding: 2px;
     margin-bottom: 15px;
