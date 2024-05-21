@@ -79,3 +79,17 @@ html {
   padding: 5px;
   border: 1px dashed black;
 }
+
+#fragment-image-1 {
+  height: 200px;
+  width: 250px;
+  padding: 5px;
+  border: 1px dashed black;
+}
+
+#fragment-image-2 {
+  height: 200px;
+  width: 250px;
+  padding: 5px;
+  border: 1px dashed black;
+}
