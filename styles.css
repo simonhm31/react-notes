@@ -65,3 +65,17 @@ html {
   padding: 5px;
   border: 1px dashed black;
 }
+
+#multiple-elements-in-react-component {
+  height: 200px;
+  width: 250px;
+  padding: 5px;
+  border: 1px dashed black;
+}
+
+#one-element-in-react-component {
+  height: 200px;
+  width: 250px;
+  padding: 5px;
+  border: 1px dashed black;
+}
