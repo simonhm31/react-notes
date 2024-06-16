@@ -1,6 +1,4 @@
 {
-  "cSpell.words": [
-    "subsubtitle",
-    "vite"
-  ]
+  "cSpell.words": ["subsubtitle", "vite"],
+  "liveServer.settings.port": 5501
 }
