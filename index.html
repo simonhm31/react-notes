@@ -4,11 +4,13 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>React Notes</title>
-    <link rel="icon" href="./favicon.ico"/>
-    <link rel="stylesheet" href="./node_modules/bootstrap/dist/css/bootstrap.css">
+    <link rel="icon" href="./favicon.ico" />
+    <link
+      rel="stylesheet"
+      href="./node_modules/bootstrap/dist/css/bootstrap.css"
+    />
     <link rel="stylesheet" href="./normalize.css" />
     <link rel="stylesheet" href="./styles.css" />
-
   </head>
   <body>
     <div class="title">
@@ -38,7 +40,7 @@
           </p>
           <p>
             View React version by running
-            <code>npm view react version</code> from command line   
+            <code>npm view react version</code> from command line
           </p>
           <p>
             View project in browser by running <code>"npm start"</code> from
@@ -161,7 +163,19 @@
       </div>
       <div class="subsubtitle">
         <h2>Rendering Lists</h2>
-        <p></p>
+        <div class="text">
+          <p>
+            Let's say we have an array of items: <br /><code>
+              let items = ["first", "second", "third"];
+            </code>
+          </p>
+          <p>We can render this on the page by calling the <code>map</code> method on the array:</p>
+          <img id="rendering-lists-image-1" src="./rendering-lists-1.png" alt="rendering lists">
+          <p>However, this leads to a Chrome DevTools error. 
+          </p>
+          <p>To fix this we need to add a <code>key</code> component inside the <code>&ltli&gt</code> tag:</p>
+          <img id="rendering-lists-image-2" src="./rendering-lists-2.png" alt="rendering lists">
+        </div>
       </div>
     </div>
   </body>
