@@ -1,96 +1,182 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.4.1/dist/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>React Notes</title>
-    <link rel="icon" href="./favicon.png">
-    <link rel="stylesheet" href="./normalize.css">
-    <link rel="stylesheet" href="./styles.css">
-    
-</head>
-<body>
+    <link rel="icon" href="./favicon.ico" />
+    <link
+      rel="stylesheet"
+      href="./node_modules/bootstrap/dist/css/bootstrap.css"
+    />
+    <link rel="stylesheet" href="./normalize.css" />
+    <link rel="stylesheet" href="./styles.css" />
+  </head>
+  <body>
     <div class="title">
-        <h1>React Notes</h1>
+      <h1>React Notes</h1>
     </div>
 
     <div class="subtitle">
-        <h2>Getting Started:</h2>
+      <h2>Getting Started:</h2>
 
-        <div class="subsubtitle">
-            <h2>What is React?</h2>
+      <div class="subsubtitle">
+        <h2>What is React?</h2>
 
-            <div class="text">
-                <p>React was developed by Facebook in 2011. React is 
-                    a frontend JavaScript library.
-                </p>
-            </div>
+        <div class="text">
+          <p>
+            React was developed by Facebook in 2011. React is a frontend
+            JavaScript library.
+          </p>
+        </div>
+      </div>
+
+      <div class="subsubtitle">
+        <h2>Basics:</h2>
+        <div class="text">
+          <p>
+            Create react app by running
+            <code>"create-react-app [name]"</code> from command line
+          </p>
+          <p>
+            View React version by running
+            <code>npm view react version</code> from command line
+          </p>
+          <p>
+            View project in browser by running <code>"npm start"</code> from
+            project directory
+          </p>
         </div>
 
-        <div class="subsubtitle">
-            <h2>Basics:</h2>
-            <div class="text">
-                <p>Create react app by running <code>"create-react-app [name]"</code> from command line</p>
-                <p>View project in browser by running <code>"npm start"</code> from project directory</p>
-            </div>
-
-            <div class="text">
-                <p>A skeleton react app will look like </p>
-                <img id="directories-image" src="./default.png" alt="directories in react app">
-                <p>The index.html file inside the public directory is a normal HTML file. You can change the favicon and title there.</p>
-            </div>
-            <div class="text">
-                <h4>Installing Bootstrap:</h4>
-                <p>Run <code>"npm install bootstrap"</code> from project directory. This installs bootstrap in the node modules</p>
-                <p>Then, <code>"import 'bootstrap/dist/css/bootstrap.css'"</code> to index.js. This will import bootstrap from the node modules into the app</p>
-            </div>
+        <div class="text">
+          <p>A skeleton react app will look like</p>
+          <img
+            id="directories-image"
+            src="./default.png"
+            alt="directories in react app"
+          />
+          <p>
+            The index.html file inside the public directory is a normal HTML
+            file. You can change the favicon and title there.
+          </p>
         </div>
+        <div class="text">
+          <h4>Installing Bootstrap:</h4>
+          <p>
+            Run <code>"npm i bootstrap"</code> from project directory. This
+            installs bootstrap in the node modules
+          </p>
+          <p>
+            Then, <code>"import 'bootstrap/dist/css/bootstrap.css'"</code> to
+            index.js. This will import bootstrap from the node modules into the
+            app
+          </p>
+        </div>
+      </div>
     </div>
 
     <div class="subtitle">
-        <h2>ES6 Refresher:</h2>
+      <h2>Getting Started With React</h2>
 
-        <div class="subsubtitle">
-            <h2>Let vs Var vs Const:</h2>
-            <div class="text">
-                <p>See <code>"let-var-const.js"</code></p>
-            </div>
+      <div class="subsubtitle">
+        <h2>Creating a React App</h2>
+
+        <div class="text">
+          <p>
+            You can create a react app by running
+            <code>create-react-app [app-name]</code>. However, you can also use
+            <code><i>Vite</i></code>
+          </p>
         </div>
 
-        <div class="subsubtitle">
-            <h2>Objects</h2>
+        <div class="text">
+          <p>
+            <code>Vite</code> was created by Evan You who is the same guy who
+            created <code>Vue</code>
+          </p>
 
-            <div class="text">
-
-            </div>
+          <p>
+            To create a react app with <code>Vite</code> run
+            <code>"npm create vite@latest"</code>
+          </p>
+          <p>You will be prompted to select a framework:</p>
+          <img src="./vite-image-1.png" alt="vite terminal" id="vite-image-1" />
+          <p>With React, you'll be asked for your variant preference:</p>
+          <img src="./vite-image-2.png" alt="vite terminal" id="vite-image-2" />
+          <hr />
+          <p>
+            To run a live server with a Vite-created React app, run
+            <code>npm run dev</code> (instead of <code>npm start</code>)
+          </p>
         </div>
+      </div>
     </div>
 
+    <div class="subtitle">
+      <h2>Building Components:</h2>
 
-    <!-- <div class="subtitle">
-        <h2>Components:</h2>
-        <div class="subsubtitle">
-            <h2>Creating a component: </h2>
-            <div class="text">
-                Components are created in the "src" folder. Their filetype is ".jsx". Each jsx file contains <strong><u>ONE</u></strong> and only one component
-            </div>
-            <div class="text">
-               <p>Two types of components:</p>
-               <ul>
-                <li>Class Components</li>
-                <li>Function Components</li>
-               </ul>
-            </div>
-        </div>
+      <div class="subsubtitle">
+        <h3>Creating a ListGroup Component</h3>
 
-        <div class="subsubtitle">
-            <h2>Your first react component:</h2>
-            <p>A shortcut to importing "React" and "Components" is <code>"imrc"</code></p>
+        <div class="text">
+          <p></p>
         </div>
-    </div> -->
-    <script src="./ES6-Refresher/let-var-const.js"></script>
-    <script src="./ES6-Refresher/objects.js"></script>
-    <script src="./ES6-Refresher/this-keyword.js"></script>
-</body>
+      </div>
+
+      <div class="subsubtitle">
+        <h2>Fragments</h2>
+        <div class="text">
+          <p>
+            Fragments are important because in React, a component can't return
+            more than one element
+          </p>
+          <p>For example, this code returns an error</p>
+          <img
+            src="./multiple-elements-in-react-component.png"
+            alt="multiple elements"
+            id="multiple-elements-in-react-component"
+          />
+          <p>However, if you wrap this in a div the error goes away</p>
+          <img
+            src="./one-element-in-react-component.png"
+            alt="one element"
+            id="one-element-in-react-component"
+          />
+        </div>
+        <div class="text">
+          <p>
+            If you want your component to return more than one element with no
+            problems, you can use the fragment react package
+          </p>
+          <img
+            src="./fragment-image-1.png"
+            alt="fragment image"
+            id="fragment-image-1"
+          />
+          <p>This is the same as using <code>&lt&gt&lt/&gt</code></p>
+          <img
+            src="./fragment-image-2.png"
+            alt="fragment image"
+            id="fragment-image-2"
+          />
+        </div>
+      </div>
+      <div class="subsubtitle">
+        <h2>Rendering Lists</h2>
+        <div class="text">
+          <p>
+            Let's say we have an array of items: <br /><code>
+              let items = ["first", "second", "third"];
+            </code>
+          </p>
+          <p>We can render this on the page by calling the <code>map</code> method on the array:</p>
+          <img id="rendering-lists-image-1" src="./rendering-lists-1.png" alt="rendering lists">
+          <p>However, this leads to a Chrome DevTools error. 
+          </p>
+          <p>To fix this we need to add a <code>key</code> component inside the <code>&ltli&gt</code> tag:</p>
+          <img id="rendering-lists-image-2" src="./rendering-lists-2.png" alt="rendering lists">
+        </div>
+      </div>
+    </div>
+  </body>
 </html>
